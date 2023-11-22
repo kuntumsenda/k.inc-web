@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@300;400;500;600;700&display=swap');
+@import './modules/typography';
+@import './modules/colors';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  background: map-get($map: $colors, $key: white);
+  font-family: 'Inter', sans-serif !important;
+  font-size: $fontBody;
+  color: map-get($map: $colors, $key: grey-3);
+  font-weight: map-get($map: $fontWeight, $key: regular);
+}
+.container, .dashboard__container{
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.dashboard__container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: map-get($map: $breakpoints, $key: sm)) {
+  .container, .dashboard__container{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (min-width: map-get($map: $breakpoints, $key: lg)) {
+  .container{
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+.section__top_page{
+  padding-top: 120px;
+}
+
+section, footer{
+  position: relative;
+  max-width: 1512px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex{
+  display: flex;
+}
+.items-center{
+  align-items: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+
+.input-center{
+  input{ text-align: center; }
+}
+
+.full-width{
+  width: 100%;
+}
+
+.text-ellipsis-2{
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap;
+}
+.discount--badge{
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}

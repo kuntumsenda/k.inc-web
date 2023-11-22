@@ -1,0 +1,59 @@
+// COLORS
+
+$colors: (
+  primary: #E0965F,
+  secondary: #f4c7a5,
+  positive: rgb(50, 140, 55),
+  negative: rgb(231, 4, 4),
+  brown: #3C3528,
+  brown-1: #908064,
+  grey-1: #E1E1E1,
+  grey-2: #A4A4A4,
+  grey-3: #7C7C7C,
+  black: #1E1E1E,
+  white: #FFFCF7,
+  blue-3: #075fed,
+  purple-3: #9107ed,
+  green-3: #07ed41,
+  amber-3: #ed7e07,
+  transparent: transparent,
+);
+
+
+// TYPOGRAPHY
+$fontBody: 16px;
+
+$headings:(
+  h1: 96px,
+  h2: 60px,
+  h3: 48px,
+  h4: 32px,
+  h5: 24px,
+  h6: 20px,
+);
+
+$subtitle:(
+  subtitle-1: 18px,
+  subtitle-2: 14px
+);
+
+$fontWeight: (
+  thin: 300,
+  regular: 400,
+  medium: 500,
+  bold: 600,
+  bolder: 700
+);
+
+$fontFamily1: 'Inter', sans-serif;
+$fontFamily2: 'Forum', serif;
+
+// BREAKPOINTS MIN WIDTH
+$breakpoints: (
+  sm: 500px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1440px
+);
+
+$radiusDefault: 6px;

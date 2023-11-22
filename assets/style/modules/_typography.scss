@@ -1,0 +1,47 @@
+h1,h2,h3,h4,h5,h6, p{
+  margin: 0;
+  padding: 0;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: map-get($map: $colors, $key: grey-3);
+}
+@each $key, $value in $headings{
+  #{$key} {
+    font-size: #{$value};
+    line-height: 1;
+    font-weight: map-get($map: $fontWeight, $key: medium);
+    color: map-get($map: $colors, $key: black);
+    font-family: $fontFamily2;
+  }
+  .text-#{$key} {
+    font-size: #{$value};
+    line-height: 1;
+    font-weight: map-get($map: $fontWeight, $key: medium);
+    color: map-get($map: $colors, $key: black);
+    font-family: $fontFamily2;
+  }
+}
+@each $key, $value in $subtitle{
+  .text-#{$key} {
+    font-size: #{$value} !important;
+  }
+}
+
+@each $key, $value in $fontWeight{
+  .font-#{$key} {
+    font-weight: #{$value} !important;
+  }
+}
+
+.text-body{
+  font-size: $fontBody;
+}
+
+.font-family-2{
+  font-family: $fontFamily2;
+}
+.font-family-1{
+  font-family: $fontFamily1;
+}
