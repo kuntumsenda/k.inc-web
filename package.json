@@ -19,10 +19,8 @@
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
     "axios": "^1.6.2",
-    "nuxt3-vuex-module": "^1.0.14",
     "pinia": "^2.1.7",
     "sass": "^1.69.5",
-    "vue-sweetalert2": "^5.0.5",
-    "vuex": "^4.1.0"
+    "vue-sweetalert2": "^5.0.5"
   }
 }
